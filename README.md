@@ -60,7 +60,7 @@ Claude's count runs from 1.17 times OpenAI's in Japanese to 2.60 times in Bengal
 
 | Column | Models | Counted with |
 |---|---|---|
-| OpenAI (the reference) | GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna | OpenAI's public tokenizer, o200k |
+| OpenAI (the reference) | GPT-6.2 Astra, GPT-6.2 Sol, GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna | OpenAI's public tokenizer, o200k |
 | Claude | Claude Fable 5.2, Fable 5.1, Opus 5.5, Sonnet 5.5, Haiku 5.5 | Anthropic's token counting endpoint |
 | Gemini 4 | Gemini 4 Carbon, Hydrogen, Argon | Google's token counter |
 | Gemini 3.x | Gemini 3.8 Flash, Gemini 3.5 Flash-Lite | Google's token counter |
@@ -74,6 +74,7 @@ In the first table, "Gemini" covers all five Gemini models. Grok isn't here: the
 - **By kind of text.** A fixed set of 114 texts: prose in English, French, German, Spanish and Italian, prompts, emails, chats, code in about fifteen programming languages, data files and tables of figures. Each text was counted with o200k and with each maker's own counter or published tokenizer. Claude and Gemini were last counted on 16 November 2026, the published tokenizers on 2 November 2026.
 - **By language.** Four texts in each language, counted on 16 November 2026: the Universal Declaration of Human Rights in two halves, and two everyday texts (a shop's instructions to its AI assistant, a message to a colleague). A language's figure is the mean of the formal and the everyday texts. The Declaration's texts come from [simonw/udhr-markdown](https://github.com/simonw/udhr-markdown).
 - **One figure for all Claude models.** Anthropic's endpoint gave exactly the same count for the five models on every one of the 114 texts.
+- **The reference, checked.** OpenAI doesn't say which tokenizer its GPT-6 models use. On 18 November 2026, OpenAI's own token counter was asked about 234 texts, the 114 above and the 120 texts of the language set, for the five GPT models. On every text it gave o200k's count plus 6, the tokens that frame a message.
 
 ## Limits
 
