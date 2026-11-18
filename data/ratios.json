@@ -3,10 +3,18 @@
   "reference": {
     "tokenizer": "o200k",
     "models": [
+      "GPT-6.2 Astra",
+      "GPT-6.2 Sol",
       "GPT-6 Astra",
       "GPT-6.1 Sol",
       "GPT-6 Luna"
-    ]
+    ],
+    "checked": {
+      "on": "2026-11-18",
+      "with": "OpenAI's token counter",
+      "texts": 234,
+      "result": "o200k's count plus 6, the tokens that frame a message, on every text and for each model"
+    }
   },
   "columns": {
     "claude": {
